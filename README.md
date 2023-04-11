@@ -1,2 +1,2 @@
 # MessageApp
-A message app, short for messaging app, is a type of communication software that enables users to exchange written or multimedia messages with each other in real time.
+A message app, short for messaging app, is a type of communication software that enables users to exchange written or multimedia messages with each other in real time. Popular messaging apps include WhatsApp, Facebook Messenger, iMessage, and Telegram, among others. These apps often offer features such as group chats, voice and video calls, file sharing, and end-to-end encryption for secure messaging. Messaging apps are widely used for personal and professional communication, both for socializing and for business purposes.

@@ -1,0 +1,43 @@
+	  CHAT APPLICATION UML
++------------------------------------+
+|            MessageApp              |
++------------------------------------+
+| - users: list<User>                |
++------------------------------------+
+| + registerUser(username: string)   |
+| + sendMessage(from: User, to: User,|
+|       message: string)             |
+| + receiveMessage(from: User, to:   |
+|       User, message: string)       |
++------------------------------------+
+               
++-------+                                       +------====-+
+|  User |                                       |  Message  |
++-------------------------+                     +------====-+
+| - username: string     |                      | - message: string |
+| - messages: list<Message> |                   | - from: User |
++-------------------------------------------+   | - to: User   |
+| + getUsername(): string        |              | + getMessage(): string |
+| + sendMessage(to: User,message: string) |     | + getTo(): User |
+| + receiveMessage(from: User,message: string)| | + getFrom(): User |
++-------------------------------------------+   +------------------------+
+
+
+EXPLAINATION
+-------------
+The MessageApp class represents the overall application and has a private attribute called users which is a list of User objects. The MessageApp class has three public methods:
+
+registerUser(username: string): Registers a new user with the given username and adds them to the users list.
+sendMessage(from: User, to: User, message: string): Sends a message from the from user to the to user with the given message.
+receiveMessage(from: User, to: User, message: string): Receives a message from the from user to the to user with the given message.
+The User class represents a user of the application and has two private attributes: username which is a string representing the user's username, and messages which is a list of Message objects representing the messages that the user has received. The User class has four public methods:
+
+getUsername(): string: Returns the user's username.
+sendMessage(to: User, message: string): Sends a message from this user to the to user with the given message.
+receiveMessage(from: User, message: string): Receives a message from the from user with the given message.
+getMessages(): list<Message>: Returns a list of all messages that this user has received.
+The Message class represents a message that is sent between two users and has three private attributes: from which is a User object representing the user who sent the message, to which is a User object representing the user who received the message, and message which is a string representing the contents of the message. The Message class has three public methods:
+
+getFrom(): User: Returns the user who sent the message.
+getTo(): User: Returns the user who received the message.
+getMessage(): string: Returns the contents of the message.

@@ -1,0 +1,36 @@
++---------------+
+ Message App UML
++---------------+
+
++-------------+
+     User
++-------------+
+-username: string
+-message: list<message>
+------------------------
++getUsername():string
++getMessages()
++sendMessage()
++receiveMessage()
+
++------------------+
+	message
++------------------+
+-message: string
+-from: User
+-to: User
+-------------------
++getFrom(message:string, from:User):void
++getTo(message:string, to:User):void
++getMessage():void
+--------------------
+
+
++------------------+
+    MessageApp
++------------------+
+-users: list<User>
+-------------------
++registerUsers(username:string)
++sendMessage(message:string, from:User, to:User)
++receiceMessage(message:string, from:User, to:User)
